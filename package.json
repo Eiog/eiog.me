@@ -1,0 +1,39 @@
+{
+  "name": "astro-starter",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "astro preview",
+    "i18n": "astro-i18next generate"
+  },
+  "dependencies": {
+    "@astrojs/solid-js": "^2.1.0",
+    "@astrojs/vue": "^2.1.1",
+    "@unocss/reset": "^0.51.4",
+    "astro": "^2.3.0",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.4",
+    "@astrojs/image": "^0.16.6",
+    "@astrojs/netlify": "^2.2.2",
+    "@astrojs/node": "^5.1.1",
+    "@astrojs/sitemap": "^1.2.2",
+    "@astrojs/vercel": "^3.2.3",
+    "@vite-pwa/astro": "^0.0.5",
+    "astro-i18next": "1.0.0-beta.21",
+    "astro-icon": "^0.8.0",
+    "astro-robots-txt": "^0.4.1",
+    "eslint": "^8.38.0",
+    "unocss": "^0.51.4",
+    "unocss-preset-extra": "^0.5.2",
+    "unocss-preset-scrollbar": "^0.2.1",
+    "unplugin-auto-import": "^0.15.2"
+  }
+}
