@@ -1,7 +1,50 @@
 ---
 import { Icon } from 'astro-icon'
+import {Shape} from 'mojs/core'
+const icons = [
+'dm/亚古兽',
+'dm/加布兽',
+'dm/比丘兽',
+'dm/甲虫兽',
+'dm/巴鲁兽',
+'dm/哥玛兽',
+'dm/巴达兽',
+'dm/小狗兽',
+'dm/滚球兽',
+'dm/独角兽',
+'dm/比高兽',
+'dm/年糕兽',
+'dm/种子兽',
+'dm/布加兽',
+'dm/迪哥兽',
+'dm/咪罗兽',
+'dm/黑球兽',
+'dm/布尼兽',
+'dm/豆苗兽',
+'dm/泡沫兽',
+'dm/浮球兽',
+'dm/比兹兽',
+'dm/浮游兽',
+'dm/雪球兽',
+'dm/勇气徽章-太一',
+'dm/友情徽章-阿和',
+'dm/爱心徽章-素娜',
+'dm/知识徽章-光子郎',
+'dm/纯真徽章-美美',
+'dm/诚实徽章-阿助',
+'dm/希望徽章-阿武',
+'dm/光明徽章-嘉儿',
+]
 ---
 
-<div>
-  <Icon pack="dm" name="巴达兽" />
+<div w-100 h-10 overflow-hidden relative>
+  <div h-10 flex-center gap-1 absolute>
+    {
+      icons?.map((item)=>(
+        <>
+        <Icon name={item} size="30" />
+        </>
+      ))
+    }
+  </div>
 </div>

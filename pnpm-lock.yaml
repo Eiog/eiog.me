@@ -9,6 +9,7 @@ specifiers:
   '@astrojs/solid-js': ^2.1.0
   '@astrojs/vercel': ^3.2.3
   '@astrojs/vue': ^2.1.1
+  '@mojs/core': ^1.5.1
   '@unocss/reset': ^0.51.4
   '@vite-pwa/astro': ^0.0.5
   astro: ^2.3.0
@@ -25,6 +26,7 @@ specifiers:
 dependencies:
   '@astrojs/solid-js': registry.npmmirror.com/@astrojs/solid-js/2.1.0_wgvovod2kpnecxzvtgkpardgce
   '@astrojs/vue': registry.npmmirror.com/@astrojs/vue/2.1.1_ayypdmofeaqrl5awpkj5h7zfru
+  '@mojs/core': registry.npmmirror.com/@mojs/core/1.5.1
   '@unocss/reset': registry.npmmirror.com/@unocss/reset/0.51.4
   astro: registry.npmmirror.com/astro/2.3.0
   vue: registry.npmmirror.com/vue/3.2.47
@@ -1833,7 +1835,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: registry.npmmirror.com/regenerator-runtime/0.13.11
-    dev: true
 
   registry.npmmirror.com/@babel/template/7.20.7:
     resolution: {integrity: sha512-8SegXApWe6VoNw0r9JHpSteLKTpTiLZ4rMlGIm9JQ18KiCtyQiAMEazujAHrUS5flrcqYZa75ukev3P6QmUwUw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/template/-/template-7.20.7.tgz}
@@ -2301,6 +2302,15 @@ packages:
       - encoding
       - supports-color
     dev: true
+
+  registry.npmmirror.com/@mojs/core/1.5.1:
+    resolution: {integrity: sha512-V/6jxmetIJfc5S1U1UxsG9dgS49HojURytd1gMH5VNq7CeBNQyGFShGWar60UvavqBHfv5HLEhdmdAF/zGvocQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mojs/core/-/core-1.5.1.tgz}
+    name: '@mojs/core'
+    version: 1.5.1
+    engines: {node: ^18, npm: ^9}
+    dependencies:
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.21.0
+    dev: false
 
   registry.npmmirror.com/@netlify/functions/1.4.0:
     resolution: {integrity: sha512-gy7ULTIRroc2/jyFVGx1djCmmBMVisIwrvkqggq5B6iDcInRSy2Tpkm+V5C63hKJVkNRskKWtLQKm9ecCaQTjA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@netlify/functions/-/functions-1.4.0.tgz}
@@ -8188,7 +8198,6 @@ packages:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz}
     name: regenerator-runtime
     version: 0.13.11
-    dev: true
 
   registry.npmmirror.com/regenerator-transform/0.15.1:
     resolution: {integrity: sha512-knzmNAcuyxV+gQCufkYcvOqX/qIIfHLv0u5x79kRxuGojfYVky1f15TzZEu2Avte8QGepvUNTnLskf8E6X6Vyg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/regenerator-transform/-/regenerator-transform-0.15.1.tgz}
