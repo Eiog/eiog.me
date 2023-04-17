@@ -37,14 +37,31 @@ const icons = [
 ]
 ---
 
-<div w-100 h-10 overflow-hidden relative>
-  <div h-10 flex-center gap-1 absolute>
+<div w-100 h-20 overflow-hidden relative>
+  <div h-20 flex-center gap-1 absolute>
     {
       icons?.map((item)=>(
         <>
-        <Icon name={item} size="30" />
+        <Icon class="monsters" name={item} size="30" />
         </>
       ))
     }
   </div>
 </div>
+
+<style lang="less">
+  .monsters{
+    animation: bounce 1s infinite;
+  }
+  @keyframes bounce{
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(20px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+</style>
