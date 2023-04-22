@@ -1,10 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hello from  '../components/Hello.astro';
+import Hello from  '../components/Hello.vue';
 import GitHub from "~/components/GitHub.astro";
-import Loading from "~/components/Loading.astro";
-import Card from "../components/Card.astro";
-import Counter from "../components/Counter.vue";
+import Loading from "~/components/Loading.vue";
 import i18next, { t, changeLanguage } from "i18next";
 import { LanguageSelector, Trans } from "astro-i18next/components";
 
@@ -13,12 +11,12 @@ changeLanguage("cn");
 
 <Layout title="Here is Eiog">
 	<main class="w-3xl flex-col" >
-		<Hello/>
+		<Hello client:only="vue"/>
     <div class="flex mt-3">
       <GitHub/>
     </div>
     <div class="flex-center mt-80">
-      <Loading/>
+      <Loading client:only="vue"/>
     </div>
 	</main>
 

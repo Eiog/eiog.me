@@ -1,3 +1,4 @@
+import { resolve } from 'node:path'
 import { defineConfig } from 'astro/config'
 import vue from '@astrojs/vue'
 import solidJs from '@astrojs/solid-js'
@@ -11,6 +12,7 @@ import sitemap from '@astrojs/sitemap'
 import robotsTxt from 'astro-robots-txt'
 import astroI18next from 'astro-i18next'
 import AstroPWA from '@vite-pwa/astro'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 function envAdapter() {
   if (process.env.OUTPUT === 'vercel') {
@@ -94,4 +96,12 @@ export default defineConfig({
   ],
   output: 'server',
   adapter: envAdapter(),
+  vite: {
+    plugins: [
+      createSvgIconsPlugin({
+        iconDirs: [resolve(process.cwd(), 'src/icons')],
+        symbolId: 'icon-[dir]-[name]',
+      }),
+    ],
+  },
 })

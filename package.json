@@ -18,7 +18,9 @@
     "@mojs/core": "^1.5.1",
     "@unocss/reset": "^0.51.4",
     "astro": "^2.3.0",
-    "vue": "^3.2.47"
+    "typed.js": "^2.0.15",
+    "vue": "^3.2.47",
+    "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
@@ -37,6 +39,7 @@
     "unocss": "^0.51.4",
     "unocss-preset-extra": "^0.5.2",
     "unocss-preset-scrollbar": "^0.2.1",
-    "unplugin-auto-import": "^0.15.2"
+    "unplugin-auto-import": "^0.15.2",
+    "vite-plugin-svg-icons": "^2.0.1"
   }
 }
