@@ -40,6 +40,7 @@ export default defineConfig({
     robotsTxt(),
     // https://github.com/yassinedoghri/astro-i18next
     astroI18next(),
+    // https://github.com/antfu/unplugin-auto-import#readme
     AutoImport({
       /* options */
       include: [
@@ -49,6 +50,7 @@ export default defineConfig({
       ],
       imports: [
         'vue',
+        '@vueuse/core',
       ],
       dirs: ['src/hooks', 'src/composables', 'src/stores', 'src/utils'],
       dts: 'src/typings/auto-import.d.ts',
