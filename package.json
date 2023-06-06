@@ -27,6 +27,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
+    "@eiog/eslint-config": "^0.0.1",
+    "@eiog/ts-config": "^0.0.3",
     "@astrojs/image": "^0.16.6",
     "@astrojs/netlify": "^2.2.2",
     "@astrojs/node": "^5.1.1",
@@ -45,5 +47,14 @@
     "unocss-preset-scrollbar": "^0.2.1",
     "unplugin-auto-import": "^0.15.2",
     "vite-plugin-svg-icons": "^2.0.1"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint . --fix",
+      "git add"
+    ]
   }
 }
